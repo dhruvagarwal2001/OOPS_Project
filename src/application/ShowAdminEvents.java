@@ -18,8 +18,8 @@ public class ShowAdminEvents {
 	{
 		Stage window=new Stage();
 		window.setTitle("Events");
-		window.setMinHeight(400);
-		window.setMinWidth(400);
+		window.setMinHeight(800);
+		window.setMinWidth(800);
 		GridPane grid=new GridPane();
 		grid.setPadding(new Insets(10,10,10,10));
 		grid.setVgap(8);
@@ -35,7 +35,7 @@ public class ShowAdminEvents {
 		for(Event e:a.getArr().values())
 		{
 			Label label1=new Label();
-			label1.setText(e.getEventId()+". "+e.getEventName()+": "+e.getDesc()+"\n"+e.getStartTime()+"-"+e.getEndTime()+"\nCost:"+e.getCost()+"\n"+"Total Sales :"+e.getTotalSales());
+			label1.setText(e.getEventId()+". "+e.getEventName()+": "+e.getDesc()+"\n"+e.getStartTime()+"-"+e.getEndTime()+"\nCost:"+e.getCost()+"\n"+"Total Sales :"+e.getTotalSales()+"\n");
 			GridPane.setConstraints(label1, 0, row);
 			row++;
 			layout.getChildren().addAll(label1);

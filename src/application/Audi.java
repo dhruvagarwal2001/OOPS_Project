@@ -12,11 +12,18 @@ public class Audi {
 		arr=new HashMap<Integer,Event>();
 		allcustomers=new ArrayList<Student>();
 		alladmins=new ArrayList<Admin>();
-		arr.put(1,new Event("Razzmatazz","12:00pm","2:00pm","Dance Competition between colleges",1,100));
-		arr.put(2,new Event("Rocktaves","2:30pm","4:30pm","Music Competition between different bands",2,150));
-		allcustomers.add(new Student("Dhruv","Agarwal","email","pass",this));
-		allcustomers.add(new Student("Dhruv","Agarwal","email1","pass1",this));
-		alladmins.add(new Admin("augsd","agarwal","em","pa",this));
+		arr.put(1,new Event("Oasis Inaugration","8:00am","9:00pm","Beginning of the Annual Fest",1,120));
+		arr.put(2,new Event("Rocktaves","9:15am","10:30am","Inter College Music Competition",2,150));
+		arr.put(3,new Event("Drum Duels","11:30am","12:30pm","Drumming Competition",3,180));
+		arr.put(4,new Event("Sukhmanch","12:45pm","1:30pm","Theatrical Performance",4,150));
+		arr.put(5,new Event("Street Dance","2:00pm","3:30pm","Dance Competition open for all",5,190));
+		arr.put(6,new Event("Nukkad Natak","3:45pm","4:30pm","A street Play by different Colleges",6,100));
+		arr.put(7,new Event("Razzmatazz","5:00pm","6:30pm","Inter College Dance Competition",7,200));
+		arr.put(8,new Event("Magic Show","7:00pm","8:00pm","Magicians all over India showcasing their magic",8,190));
+		
+		allcustomers.add(new Student("testuser1","testuser1","testuser1@gmail.com","testuserpass1",this));
+		allcustomers.add(new Student("testuser2","testuser2","testuser2@gmail.com","testuserpass2",this));
+		alladmins.add(new Admin("adminuser","adminuser","admin@gmail.com","adminpass",this));
 		this.safeToBrowse = true;
 		
 	}
