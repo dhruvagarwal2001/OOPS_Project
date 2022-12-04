@@ -79,7 +79,7 @@ public class ShowStudentEventDetails {
 			catch(NumberFormatException exec)
 			{
 				AlertBox.display("Alert", "Enter correct Event ID", "Close");
-				ShowStudentEventDetails.display(a, s);
+				ShowStudentEventDetails.	display(a, s);
 				window.close();
 				return;
 			}

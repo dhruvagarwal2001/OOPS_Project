@@ -11,12 +11,9 @@ public class Student extends User implements Runnable{
 	{
 		synchronized(this.getAudi().lock)
 		{
-			
 			this.showEvents();
 			this.getAudi().lock=false;
-			
 		}
-		
 	}
 	Student()
 	{
